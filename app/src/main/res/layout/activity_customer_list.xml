@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAF6FF">
+
+    <!-- Encabezado -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lista de Clientes"
+        android:background="#6200EE"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <!-- Lista de clientes -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerCustomers"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="12dp" />
+
+    <!-- Mensaje cuando la lista está vacía -->
+    <TextView
+        android:id="@+id/tvEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No hay clientes registrados."
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:textColor="#666666"
+        android:layout_marginTop="16dp" />
+
+    <!-- Botón para volver -->
+    <Button
+        android:id="@+id/btnBackToMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver al Menú"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:backgroundTint="#6200EE"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
