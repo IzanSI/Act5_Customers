@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Afegir/Editar línia de venda"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/etProductId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID Producte"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantitat"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/etPriceUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Preu unitari"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnSaveLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Desar"
+        android:layout_marginTop="24dp"/>
+</LinearLayout>

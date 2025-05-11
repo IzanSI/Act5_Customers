@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Llista d'Ordres de Venda"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="#6200EE"
+            android:textColor="#FFFFFF"
+            android:padding="16dp"
+            android:gravity="center" />
+
+        <!-- 🔘 Botons de control -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="12dp">
+
+            <Button
+                android:id="@+id/btnAddOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Afegir" />
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tornar"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+
+        <!-- 🧾 Llista de comandes -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerSaleOrders"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="12dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvOrderName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nom de l'ordre"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvOrderPartner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Client" />
+
+    <TextView
+        android:id="@+id/tvOrderDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data" />
+
+    <TextView
+        android:id="@+id/tvOrderState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estat" />
+</LinearLayout>

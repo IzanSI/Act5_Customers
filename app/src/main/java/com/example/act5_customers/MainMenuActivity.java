@@ -15,6 +15,7 @@ public class MainMenuActivity extends AppCompatActivity {
         Button btnAdd = findViewById(R.id.btnAddCustomer);
         Button btnEdit = findViewById(R.id.btnEditCustomer);
         Button btnDelete = findViewById(R.id.btnDeleteCustomer);
+        Button btnSalesOrders = findViewById(R.id.btnSalesOrders);
 
         btnList.setOnClickListener(v -> {
             Intent intent = new Intent(MainMenuActivity.this, CustomerListActivity.class);
@@ -43,7 +44,7 @@ public class MainMenuActivity extends AppCompatActivity {
             intent.putExtra("password", getIntent().getStringExtra("password"));
             intent.putExtra("db", getIntent().getStringExtra("db"));
             intent.putExtra("baseUrl", "http://192.168.231.253");
-            intent.putExtra("mode", "edit"); // <-- puedes usar esto para distinguir
+            intent.putExtra("mode", "edit");
             startActivity(intent);
         });
 
@@ -54,9 +55,20 @@ public class MainMenuActivity extends AppCompatActivity {
             intent.putExtra("password", getIntent().getStringExtra("password"));
             intent.putExtra("db", getIntent().getStringExtra("db"));
             intent.putExtra("baseUrl", "http://192.168.231.253");
-            intent.putExtra("mode", "delete"); // <-- lo mismo
+            intent.putExtra("mode", "delete");
             startActivity(intent);
         });
+
+        btnSalesOrders.setOnClickListener(v -> {
+            Intent intent = new Intent(MainMenuActivity.this, SaleOrderListActivity.class);
+            intent.putExtra("uid", getIntent().getIntExtra("uid", -1));
+            intent.putExtra("username", getIntent().getStringExtra("username"));
+            intent.putExtra("password", getIntent().getStringExtra("password"));
+            intent.putExtra("db", getIntent().getStringExtra("db"));
+            intent.putExtra("baseUrl", "http://192.168.231.253");
+            startActivity(intent);
+        });
+
     }
 
 }

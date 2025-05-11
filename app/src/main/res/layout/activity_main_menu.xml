@@ -37,5 +37,12 @@
             android:layout_height="wrap_content"
             android:text="❌ Eliminar cliente" />
 
+        <Button
+            android:id="@+id/btnSalesOrders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gestió Ordres de Venda"
+            android:layout_marginTop="12dp" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

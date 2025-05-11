@@ -19,6 +19,10 @@
         <activity android:name=".CustomerFormActivity" />
         <activity android:name=".CustomerListActivity" />
         <activity android:name=".MainMenuActivity" />
+        <activity android:name=".SaleOrderLineListActivity" />
+        <activity android:name=".SaleOrderListActivity" />
+        <activity android:name=".SaleOrderFormActivity" />
+        <activity android:name=".SaleOrderLineFormActivity" />
         <activity android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>

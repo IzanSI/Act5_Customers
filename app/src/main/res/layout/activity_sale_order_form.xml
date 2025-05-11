@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Editar Ordre de Venda"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:background="#6200EE"
+        android:padding="12dp"/>
+
+    <EditText
+        android:id="@+id/etOrderName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom de l'ordre" />
+
+    <EditText
+        android:id="@+id/etOrderDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Data (YYYY-MM-DD HH:MM:SS)" />
+
+    <EditText
+        android:id="@+id/etOrderState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Estat (draft, sale, done...)" />
+
+    <Button
+        android:id="@+id/btnViewLines"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Veure línies de comanda"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnSaveOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:layout_marginTop="16dp" />
+
+
+</LinearLayout>
