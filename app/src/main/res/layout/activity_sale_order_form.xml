@@ -33,6 +33,13 @@
         android:layout_height="wrap_content"
         android:hint="Estat (draft, sale, done...)" />
 
+    <EditText
+        android:id="@+id/etOrderPartnerId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID del client (partner_id)"
+        android:inputType="number" />
+
     <Button
         android:id="@+id/btnViewLines"
         android:layout_width="match_parent"
@@ -46,6 +53,5 @@
         android:layout_height="wrap_content"
         android:text="Guardar"
         android:layout_marginTop="16dp" />
-
 
 </LinearLayout>
