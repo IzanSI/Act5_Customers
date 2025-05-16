@@ -39,6 +39,12 @@
                 android:layout_height="wrap_content"
                 android:text="Tornar"
                 android:layout_marginStart="16dp" />
+            <Button
+                android:id="@+id/btnScan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SCAN"
+                android:layout_marginTop="8dp" />
         </LinearLayout>
 
         <!-- 🧾 Llista de comandes -->

@@ -33,9 +33,14 @@ android {
 
 dependencies {
 
+    // ZXing per escanejar codis QR
+    implementation ("com.journeyapps:zxing-android-embedded:4.3.0")
+
+    // Retrofit + Gson
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")
     implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
 
+    // Altres llibreries del projecte
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)

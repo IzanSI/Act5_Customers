@@ -55,7 +55,7 @@ public class SaleOrderAdapter extends RecyclerView.Adapter<SaleOrderAdapter.View
         holder.itemView.setOnClickListener(v -> {
             Intent intent = new Intent(context, SaleOrderFormActivity.class);
             intent.putExtra("sale_order", o);
-            intent.putExtra("uid", uid); // Si no tens aquests valors dins l'adapter, els pots passar pel constructor
+            intent.putExtra("uid", uid);
             intent.putExtra("username", username);
             intent.putExtra("password", password);
             intent.putExtra("db", db);
